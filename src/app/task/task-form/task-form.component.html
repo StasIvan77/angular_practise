@@ -1,0 +1,8 @@
+<button (click)="goBack()">Go back</button>
+<div>
+    <form>
+        <input type="text" name="title" [(ngModel)]="newTask.title" placeholder="Title">
+        <textarea name="description" [(ngModel)]="newTask.description" placeholder="Description"></textarea>
+        <button (click)="addTask()">Add task</button>
+    </form>
+</div>

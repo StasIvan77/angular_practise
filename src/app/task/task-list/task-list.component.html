@@ -1,0 +1,11 @@
+<button (click)="navigateToCreate()">Add task</button>
+
+
+<ul>
+    <li appHighlight="#e5e5e5" *ngFor="let task of tasks$ | async"
+    (click)="navigateToTask(task.id)">
+        {{ task.title | kebabCase }}
+
+        {{ task.id }}
+    </li>
+</ul>
